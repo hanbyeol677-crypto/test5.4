@@ -207,11 +207,17 @@ button:hover {
     color: var(--primary-color) !important;
     border: none !important;
     margin-top: 1rem;
+    border-radius: 8px !important;
 }
 
 .submit-btn:hover {
     box-shadow: 0 0 20px 0 var(--secondary-color) !important;
     opacity: 0.9;
+}
+
+.comments-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
 }
 
 /* Responsive Adjustments */
