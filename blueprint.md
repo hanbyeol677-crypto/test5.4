@@ -1,36 +1,20 @@
-# Lotto Number Generator
-
-This document outlines the plan and features for creating a Lotto Number Generator website.
+# Lotto Number Generator - Blueprint
 
 ## Overview
-
-The application will be a simple, single-page web application that allows users to generate random lottery numbers. It will be built using HTML, CSS, and JavaScript, following modern web standards and design principles.
+A modern, framework-less Lotto Number Generator with a sleek UI and theme support.
 
 ## Features
+- **Lotto Number Generation:** Generates 6 unique numbers from 1 to 45, sorted in ascending order.
+- **Modern UI:** Responsive design using CSS Flexbox, modern color palettes, and custom animations.
+- **Theme Support:** Toggle between Dark and Light modes. User preference is persisted using `localStorage`.
+- **Animations:** Numbers appear with a "pop-in" animation for a dynamic user experience.
 
-*   **Number Generation:** Generate a set of 6 unique random numbers between 1 and 45.
-*   **Display:** Display the generated numbers in a visually appealing way.
-*   **User Interface:** A clean and intuitive user interface with a button to trigger the number generation.
-*   **Responsive Design:** The layout will adapt to different screen sizes, working on both desktop and mobile devices.
+## Technical Details
+- **HTML5:** Semantic structure.
+- **CSS3:** Custom properties (variables) for theming, container queries (planned), and animations.
+- **JavaScript (ES6+):** Module-like structure, `Set` for unique numbers, `setTimeout` for staggered animations, and `localStorage` for theme persistence.
 
-## Plan
-
-1.  **Modify `index.html`:**
-    *   Update the title to "Lotto Number Generator".
-    *   Create a main container for the application.
-    *   Add a title and a brief description.
-    *   Add a container to display the generated lottery numbers.
-    *   Add a button to generate the numbers.
-
-2.  **Modify `style.css`:**
-    *   Apply a modern and visually appealing style to the application.
-    *   Use CSS variables for colors and fonts for easy theming.
-    *   Style the number display to be clear and readable.
-    *   Style the button with a "glow" effect on hover.
-    *   Use a responsive design with container queries if necessary.
-
-3.  **Modify `main.js`:**
-    *   Implement a function to generate 6 unique random numbers between 1 and 45.
-    *   Add an event listener to the "Generate" button.
-    *   When the button is clicked, call the number generation function and update the display with the new numbers.
-    *   Add a simple animation when the numbers are displayed.
+## Development History
+- **Initial Setup:** Created basic structure with HTML, CSS, and JS.
+- **GitHub Integration:** Connected local repository to `https://github.com/hanbyeol677-crypto/test5.4`.
+- **Theme Support Implementation:** Added Dark/Light mode toggle with persistence.
