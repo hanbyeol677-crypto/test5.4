@@ -1,20 +1,32 @@
 # Lotto Number Generator - Blueprint
 
 ## Overview
-A modern, framework-less Lotto Number Generator with a sleek UI and theme support.
+A modern, framework-less Lotto Number Generator with a sleek UI, theme support, and full responsiveness across mobile, tablet, and desktop.
 
 ## Features
 - **Lotto Number Generation:** Generates 6 unique numbers from 1 to 45, sorted in ascending order.
-- **Modern UI:** Responsive design using CSS Flexbox, modern color palettes, and custom animations.
-- **Theme Support:** Toggle between Dark and Light modes. User preference is persisted using `localStorage`.
-- **Animations:** Numbers appear with a "pop-in" animation for a dynamic user experience.
+- **Modern & Responsive UI:** 
+    - Works perfectly on iPhone, Android, iPad, and Desktop.
+    - Adaptive layouts using CSS Media Queries.
+    - Touch-friendly buttons and interactive elements.
+- **Theme Support:** Toggle between Dark and Light modes with `localStorage` persistence.
+- **Copy to Clipboard:** Easily copy generated numbers to the clipboard.
+- **Animations:** Smooth "pop-in" animations for number display.
 
 ## Technical Details
-- **HTML5:** Semantic structure.
-- **CSS3:** Custom properties (variables) for theming, container queries (planned), and animations.
-- **JavaScript (ES6+):** Module-like structure, `Set` for unique numbers, `setTimeout` for staggered animations, and `localStorage` for theme persistence.
+- **HTML5:** Semantic structure with viewport meta tag for mobile optimization.
+- **CSS3:** 
+    - Modern CSS Variables for theming.
+    - Flexbox for flexible layouts.
+    - Media Queries for breakpoints (Mobile < 480px, Tablet/Desktop > 768px).
+    - Smooth transitions and keyframe animations.
+- **JavaScript (ES6+):** 
+    - `navigator.clipboard` API for copying.
+    - `localStorage` for theme persistence.
+    - Event-driven logic for number generation and UI updates.
 
 ## Development History
-- **Initial Setup:** Created basic structure with HTML, CSS, and JS.
-- **GitHub Integration:** Connected local repository to `https://github.com/hanbyeol677-crypto/test5.4`.
-- **Theme Support Implementation:** Added Dark/Light mode toggle with persistence.
+- **Initial Setup:** Basic structure and Lotto logic.
+- **GitHub Integration:** Remote repository connected.
+- **Theme Support:** Dark/Light mode toggle implemented.
+- **Responsive Optimization:** Added media queries, touch-friendly UI, and Copy feature.

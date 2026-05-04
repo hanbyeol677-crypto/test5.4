@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const generateBtn = document.getElementById('generate-btn');
-    const numberElements = document.querySelectorAll('.number');
+    const copyBtn = document.getElementById('copy-btn');
     const themeToggle = document.getElementById('theme-toggle');
+    const numberElements = document.querySelectorAll('.number');
     const body = document.body;
+    let currentNumbers = [];
 
     // Theme logic
     const currentTheme = localStorage.getItem('theme');
@@ -24,8 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     generateBtn.addEventListener('click', () => {
-        const numbers = generateLottoNumbers();
-        displayNumbers(numbers);
+        currentNumbers = generateLottoNumbers();
+        displayNumbers(currentNumbers);
+    });
+
+    copyBtn.addEventListener('click', () => {
+        if (currentNumbers.length === 0) {
+            alert('Please generate numbers first!');
+            return;
+        }
+        const textToCopy = currentNumbers.join(', ');
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = 'Copied! ✅';
+            setTimeout(() => {
+                copyBtn.textContent = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
     });
 
     function generateLottoNumbers() {
