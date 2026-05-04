@@ -8,6 +8,8 @@ A modern, framework-less Lotto Number Generator with a sleek UI, theme support, 
 - **Partnership Inquiry Form:** 
     - A simple and elegant form for potential partners to reach out.
     - Powered by **Formspree** for reliable email delivery.
+- **Disqus Comments:**
+    - Integrated comment section at the bottom of the page to foster community engagement.
 - **Modern & Responsive UI:** 
     - Works perfectly on iPhone, Android, iPad, and Desktop.
     - Adaptive layouts using CSS Media Queries.
@@ -28,6 +30,7 @@ A modern, framework-less Lotto Number Generator with a sleek UI, theme support, 
     - `localStorage` for theme persistence.
     - Event-driven logic for number generation and UI updates.
 - **Formspree Integration:** Secure and easy-to-configure form handling without a backend.
+- **Disqus Integration:** Third-party commenting system for user interaction.
 
 
 ## Development History
@@ -36,3 +39,4 @@ A modern, framework-less Lotto Number Generator with a sleek UI, theme support, 
 - **Theme Support:** Dark/Light mode toggle implemented.
 - **Responsive Optimization:** Added media queries, touch-friendly UI, and Copy feature.
 - **Partnership Form:** Added Formspree-powered inquiry form.
+- **Disqus Comments:** Integrated community discussion feature.
